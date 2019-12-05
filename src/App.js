@@ -7,8 +7,10 @@ import { Route } from 'react-router-dom';
 
 const App = () => (
   <div>
+    <nav>
     <Navigation />
-    <Route path="/" component={Home} />
+    </nav>
+    <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
   </div>
